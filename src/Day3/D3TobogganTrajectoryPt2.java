@@ -3,12 +3,10 @@ package Day3;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class D3TobogganTrajectoryPt1 {
-    private static final String PATH = "src/Day3/input_day_3.txt";
+public class D3TobogganTrajectoryPt2 {
+    private static final String PATH = "src/Day3/input_day_3_ex.txt";
 
     public static void main(String[] args) throws IOException {
         char[][] map = extendMap();
