@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 public class D4PassportProcessingPt1 {
-    private static final String PATH = "src/Day4/input_day_4.txt";
+    private static final String PATH = "src/Day4/input_day_4_ex2.txt";
 
     public static void main(String[] args) throws IOException {
         List<Map<String, Boolean>> passports = readPassports();
