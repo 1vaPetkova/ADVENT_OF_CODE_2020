@@ -17,16 +17,10 @@ public class D4PassportProcessingPt2 {
         int valid = 0;
         passportsData = passportsData.stream()
                 .filter(D4PassportProcessingPt2::containsNeededFields)
-
-//                .filter(D4PassportProcessingPt2::checkFieldsData)
+                .filter(D4PassportProcessingPt2::checkFieldsData)
                 .collect(Collectors.toList());
-        for (Map<String, String> passportsDatum : passportsData) {
-            if (checkFieldsData(passportsDatum)) {
-                valid++;
-            }
-        }
 
-        System.out.println(valid);
+        System.out.println(passportsData.size());
 
     }
 
